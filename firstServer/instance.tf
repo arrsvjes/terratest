@@ -1,4 +1,5 @@
 terraform {
+<<<<<<< HEAD
     required_providers {
         aws = {
             source  = "hashicorp/aws"
@@ -23,3 +24,26 @@ resource "aws_instance" "hello-instance" {
 }
 
 
+=======
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.0"
+    }
+  }
+}
+
+provider "aws" {
+  access_key = "------------"
+  secret_key = "--------+"
+  region     = "us-east-2"
+}
+
+resource "aws_instance" "hello-instance" {
+  ami = "ami-0fb653ca2d3203ac1"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "hello-instance"
+  }
+}
+>>>>>>> 606b0793d8260b1efc6620606e0e53b7124d04f4
