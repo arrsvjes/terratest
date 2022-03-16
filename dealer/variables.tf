@@ -10,7 +10,7 @@ variable "content" {
     default = "Class Terraform ROCKS!!!"
 }
 
-variable "region" { }
+variable "region" {
     type = string
     default = "us-east-2"
 }
