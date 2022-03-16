@@ -2,7 +2,7 @@
 
 variable "bucket" { 
     type = string
-    default = "Bucket S3 JAV"
+    default = "buckets3jav"
 }
 
 variable "content" { 
