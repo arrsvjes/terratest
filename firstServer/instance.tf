@@ -4,8 +4,8 @@ variable "AWS_SECRET_KEY_ID" {}
 
 provider "aws" {
     region = "us-east-2"
-    access_key = var.AWS_ACCESS_KEY_ID
-    secret_key = var.AWS_SECRET_KEY_ID
+    access_key = AWS_ACCESS_KEY_ID
+    secret_key = AWS_SECRET_KEY_ID
 }
 
 resource "aws_instance" "instance-terraformcloud" {
