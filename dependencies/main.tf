@@ -8,6 +8,7 @@ terraform {
 }
 
 provider "aws" {
+  
 }
 
 resource "aws_vpc" "my_vpc" {
@@ -35,10 +36,4 @@ resource "aws_instance" "slave-instance" {
     lifecycle {
         ignore_changes = ["tags"]
     }
-<<<<<<< HEAD
-
 }
-
-=======
-}
->>>>>>> 8a1b43dc8b40e6afaa4fa3ce4c005fb1569aa347
