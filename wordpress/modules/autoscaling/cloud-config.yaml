@@ -1,0 +1,8 @@
+#cloud-config
+runcmd:
+  - apt update -y
+  - apt install -y software-properties-common 
+  - apt-add-repository --yes --update ppa:ansible/ansible
+  - apt install -y apache2 php php-mysql
+  - systemctl restart apache2
+  - cd /var/www/html/ && sudo wget https://es-mx.wordpress.org/latest-es_MX.tar.gz && sudo tar -xzf latest-es_MX.tar.gz
